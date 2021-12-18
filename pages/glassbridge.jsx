@@ -1,7 +1,7 @@
 import React from "react"
-import styles from "./../styles/glass.bridge.css"
+import styles from "./../styles/GlassBridge.module.css"
 
 const BridgeGame = () => {
-  return <div>bridge game</div>
+  return <main className={styles.container}></main>
 }
 export default BridgeGame
