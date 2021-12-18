@@ -3,17 +3,17 @@ import React from 'react'
 
 
 
-const Instagram = () =>{
+export const Instagram = () =>{
     return (<></>)
 }
 
 
-const Twitter = () =>{
+export const Twitter = () =>{
     return (<></>)
 }
-const Github = () =>{
+export const Github = () =>{
     return (<></>)
 }
-const Linkedin = () =>{
+export const Linkedin = () =>{
     return (<></>)
 }
