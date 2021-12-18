@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Quick";
+  src: url("./../public/fonts/QuickSand/Quicksand-VariableFont_wght.ttf");
+}
+
+@font-face {
+  font-family: "digits";
+  src: url("./../public/fonts/Digits/digital-7.ttf");
+}
+
 html,
 body {
   margin: 0;
