@@ -36,7 +36,7 @@
 .msg {
   display: block;
   width: 100%;
-  height: auto;
+  height: auto !important;
   margin: auto;
   margin-top: 50px !important;
 }
@@ -51,4 +51,35 @@
   width: 100%;
   height: auto !important;
   text-align: center;
+}
+
+#time {
+  font-family: var(--Digit);
+  font-size: 50px;
+  color: #da2525;
+}
+
+.counter {
+  width: 100% !important;
+  height: auto !important;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.startBtn {
+  color: #fff;
+  margin: auto;
+  display: block;
+  width: 200px;
+  height: 50px;
+  background: #da2525;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  font-weight: bold;
+  cursor: pointer;
+  transition-duration: 0.5s;
+}
+
+.startBtn:hover {
+  background: #b63b3b;
 }

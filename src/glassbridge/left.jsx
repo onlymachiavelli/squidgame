@@ -16,6 +16,11 @@ const LeftSide = () => {
           <GentleMan Width="90%" />
         </div>
       </div>
+
+      <div className={styles.counter}>
+        <p id={styles.time}>00:00</p>
+      </div>
+      <button className={styles.startBtn}>Start The Game</button>
     </div>
   )
 }
