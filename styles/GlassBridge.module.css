@@ -3,4 +3,18 @@
   height: 100vh;
   background: var(--Black);
   display: flex;
+  overflow: hidden !important ;
+}
+
+.container div {
+  width: 33.33%;
+  height: 100%;
+}
+.inFlex {
+}
+
+.logo {
+  width: 100px !important;
+  height: auto !important;
+  margin: 10px;
 }
