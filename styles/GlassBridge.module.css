@@ -11,6 +11,7 @@
   height: 100%;
 }
 .inFlex {
+  border-right: 10px solid var(--Pink);
 }
 
 .logo img {
@@ -29,4 +30,25 @@
   color: #fff;
   font-weight: bold;
   margin-left: 10px;
+  text-align: center !important;
+}
+
+.msg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: auto;
+  margin-top: 50px !important;
+}
+.msg p {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+}
+.msg div {
+  width: 100%;
+  height: auto !important;
+  text-align: center;
 }

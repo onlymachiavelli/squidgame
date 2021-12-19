@@ -12,7 +12,9 @@ const LeftSide = () => {
       </div>
       <div className={styles.msg}>
         <p>If You Lose , You're Racist</p>
-        <GentleMan Width="300px" Height="200px" />
+        <div>
+          <GentleMan Width="90%" />
+        </div>
       </div>
     </div>
   )

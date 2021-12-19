@@ -6,9 +6,9 @@ import LeftSide from "../src/glassbridge/left"
 const BridgeGame = () => {
   return (
     <main className={styles.container}>
-      <div className={styles.logo}>
-        <LeftSide />
-      </div>
+      <LeftSide />
+      <div>hello world</div>
+      <div>tst reserved </div>
     </main>
   )
 }
