@@ -7,6 +7,7 @@ const LeftSide = () => {
     <div className={styles.inFlex}>
       <div className={styles.logo}>
         <Image src={logo} />
+        <p id={styles.gameTitle}>Glass Bridge</p>
       </div>
     </div>
   )

@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "Quick";
+  font-family: "quick";
   src: url("./../public/fonts/QuickSand/Quicksand-VariableFont_wght.ttf");
 }
 
@@ -17,10 +17,13 @@ body {
 * {
   text-decoration: none;
   outline: 0;
+  font-family: "quick";
 }
 
 :root {
   --Black: #0f0f0f;
 
   --Quick: "quick";
+  --Digit: "digits";
+  --Pink: #e93e7d;
 }

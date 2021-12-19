@@ -13,8 +13,20 @@
 .inFlex {
 }
 
-.logo {
+.logo img {
   width: 100px !important;
   height: auto !important;
-  margin: 10px;
+}
+
+.logo {
+  display: flex;
+  margin: 7px;
+  width: 100% !important;
+  height: auto !important;
+  align-items: center;
+}
+#gameTitle {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 10px;
 }
