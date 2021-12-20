@@ -38,7 +38,7 @@ export const GentleMan = ({ ...props }) => {
   )
 }
 
-const Flag = ({ ...props }) => {
+export const Flag = ({ ...props }) => {
   return (
     <svg
       width={props.Width}
