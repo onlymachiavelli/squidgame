@@ -3,9 +3,8 @@ import styles from "./../../styles/GlassBridge.module.css"
 import { Flag } from "./../svg"
 import myTimer from "./Timer"
 import Button from "./Button"
+import useTimer from "./Timer"
 const Bridge = () => {
-  const time = myTimer()
-  const [Time, setTime] = useState(time)
   return (
     <div className={styles.bridge}>
       <div className={styles.endLine}>
@@ -14,7 +13,7 @@ const Bridge = () => {
         &nbsp;&nbsp;
         <Flag Width="40" />
       </div>
-      <div className={styles.line}>Time</div>
+      <div className={styles.line}></div>
     </div>
   )
 }

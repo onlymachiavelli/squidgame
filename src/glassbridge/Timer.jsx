@@ -1,14 +1,22 @@
 import React, { useEffect, useState } from "react"
 
-const myTimer = () => {
+const useTimer = () => {
+  let [time, setTime] = useState(60)
+  const [launch, setLaunch] = useState(true)
   useEffect(() => {
-    let [time, setTime] = useState(60)
-    while (i--) {
-      setTime(time--)
-      setTimeout(myTimer, 1000)
+    if (time == 0) {
+      setLaunch(false)
     }
-  }, [time])
+    if (launch) {
+      let x = setInterval(() => {
+        setTime(time - 1)
+      }, 1000)
+    }
+
+    return () => clearInterval(x)
+  }, [time, launch])
+
   return { time, setTime }
 }
 
-export default myTimer
+export default useTimer
