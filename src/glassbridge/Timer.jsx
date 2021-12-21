@@ -6,6 +6,7 @@ const useTimer = () => {
   useEffect(() => {
     if (time == 0) {
       setLaunch(false)
+      setTime(60)
     }
     if (launch) {
       let x = setInterval(() => {
@@ -16,7 +17,7 @@ const useTimer = () => {
     return () => clearInterval(x)
   }, [time, launch])
 
-  return { time, setTime }
+  return { time, setTime, launch, setLaunch }
 }
 
 export default useTimer
