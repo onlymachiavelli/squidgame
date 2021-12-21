@@ -1,5 +1,15 @@
 import React, { useEffect, useState } from "react"
 
-const myTimer = () => {}
+const myTimer = () => {
+  useEffect(() => {
+    let [time, setTime] = useState(60)
+    while (i > 0) {
+      setTime(time--)
+      setTimeout(myTimer, 1000)
+      i -= 1
+    }
+  }, [time])
+  return { time, setTime }
+}
 
 export default myTimer
