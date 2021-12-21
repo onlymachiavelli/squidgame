@@ -1,7 +1,10 @@
 import React from "react"
 import styles from "./../../styles/GlassBridge.module.css"
 import { Flag } from "./../svg"
+import myTimer from "./Timer"
+import Button from "./Button"
 const Bridge = () => {
+  myTimer((res) => console.log(res))
   return (
     <div className={styles.bridge}>
       <div className={styles.endLine}>

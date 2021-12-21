@@ -5,7 +5,6 @@ import Bridge from "../src/glassbridge/Bridge"
 import LeftSide from "../src/glassbridge/left"
 import Right from "../src/glassbridge/Right"
 import Head from "next/head"
-import Button from "../src/glassbridge/Button"
 
 const BridgeGame = () => {
   return (
@@ -16,7 +15,6 @@ const BridgeGame = () => {
       <LeftSide />
       <Bridge />
       <Right />
-      <Button />
     </main>
   )
 }
