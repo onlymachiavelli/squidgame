@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react"
 
 const useTimer = () => {
-  let [time, setTime] = useState(60)
-  const [launch, setLaunch] = useState(true)
+  const [time, setTime] = useState(60)
+  const [launch, setLaunch] = useState(false)
   useEffect(() => {
     if (time == 0) {
       setLaunch(false)

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import logo from "./../../public/img/logo.png"
 import Image from "next/image"
 import styles from "./../../styles/GlassBridge.module.css"
