@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import styles from "./../../styles/GlassBridge.module.css"
 
-const buttonLine = () => {
+const buttonLine = ({ ...props }) => {
   useEffect(() => {
     console.log(Math.floor(Math.random() * 3))
   }, [])
