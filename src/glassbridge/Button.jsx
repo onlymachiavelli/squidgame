@@ -24,16 +24,21 @@ const useRandom = () => {
 
   useEffect(() => {
 
-  }, [])
+  }, [buttons])
+  return { buttons, setButtons }
+
 }
 const buttonLine = ({ ...props }) => {
+  const { buttons, setButtons } = useRandom()
+  const btns = [buttons[0], buttons[1], buttons[2]]
 
-
-  return <div className={styles.buttonLine}>
-    <button id={props.Button}></button>
-    <button id={props.Button}></button>
-    <button id={props.Button}></button>
-  </div>
+  return (
+    <div className={styles.buttonLine}>
+      <button id={props.Button}></button>
+      <button id={props.Button}></button>
+      <button id={props.Button}></button>
+    </div>
+  )
 }
 
 export default buttonLine
