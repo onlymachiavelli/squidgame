@@ -5,6 +5,7 @@ import myTimer from "./Timer"
 import Button from "./Button"
 import useTimer from "./Timer"
 const Bridge = () => {
+
   return (
     <div className={styles.bridge}>
       <div className={styles.endLine}>

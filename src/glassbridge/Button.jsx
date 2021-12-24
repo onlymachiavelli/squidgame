@@ -3,6 +3,15 @@ import React, { useState, useEffect } from "react"
 
 import styles from "./../../styles/GlassBridge.module.css"
 
+const useCurrentBtn = () => {
+  const [currrentLine, setCurrentLine] = useState(1)
+  useEffect(() => {
+
+  }, [])
+}
+
+
+
 const Random = () => {
   return Math.floor(Math.random() * 3)
 }
