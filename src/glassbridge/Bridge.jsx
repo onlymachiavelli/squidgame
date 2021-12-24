@@ -13,7 +13,13 @@ const Bridge = () => {
         &nbsp;&nbsp;
         <Flag Width="40" />
       </div>
-      <div className={styles.line}>
+      <div className={styles.line}></div>
+      <div className={styles.theButtons}>
+        <Button />
+        <Button />
+        <Button />
+        <Button />
+        <Button />
         <Button />
       </div>
     </div>

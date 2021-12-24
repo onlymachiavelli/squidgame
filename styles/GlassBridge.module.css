@@ -115,7 +115,11 @@
   margin-top: 15px !important;
 }
 
-
+.theButtons{
+  width:100% !important;
+  height:auto !important;
+  margin-top:50px;
+}
 
 .buttonLine{
   display: flex;
@@ -124,9 +128,13 @@ justify-content: center;
 
 }
 .buttonLine button {
-  width: 100px;
-  height:100px;
+  width: 60px;
+  height:60px;
   margin:10px;
-  
+  background:#90692D;
+  border:none;
+  border-radius:15px;
+  box-shadow: 0px 0px 15px 0px #D9DD29;
+  cursor: pointer;
 }
 
