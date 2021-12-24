@@ -3,23 +3,25 @@ import React, { useState, useEffect } from "react"
 import styles from "./../../styles/GlassBridge.module.css"
 
 const Random = () => {
-  return Boolean(Math.floor(Math.random() * 2))
+  return Math.floor(Math.random() * 3)
 }
 const buttonLine = ({ ...props }) => {
-  const [buttons, setButtons] = useState([false, false, false])
-  let a = ["fuck"]
-  a += "hello"
-  a += "bitch"
-  console.log(typeof a)
+  let a = [false, false, false]
+  a[Random()] = true
+
+  const [buttons, setButtons] = useState([a[0], a[1], a[2]])
+
   useEffect(() => {
-    setButtons([
-      buttons.indexOf(true) !== -1 ? false : Random(),
-      buttons.indexOf(true) !== -1 ? false : Random(),
-      buttons.indexOf(true) === -1 ? true : false,
-    ])
+
   }, [])
 
-  return <div className={styles.buttonLine}>{JSON.stringify(buttons)}</div>
+  return <div className={styles.buttonLine}>
+    <button >
+
+    </button>
+    <button></button>
+    <button></button>
+  </div>
 }
 
 export default buttonLine
