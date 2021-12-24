@@ -114,3 +114,19 @@
   margin: auto;
   margin-top: 15px !important;
 }
+
+
+
+.buttonLine{
+  display: flex;
+  width:100% !important;
+justify-content: center;  
+
+}
+.buttonLine button {
+  width: 100px;
+  height:100px;
+  margin:10px;
+  
+}
+

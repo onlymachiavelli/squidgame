@@ -1,3 +1,4 @@
+import { responseSymbol } from "next/dist/server/web/spec-compliant/fetch-event"
 import React, { useState, useEffect } from "react"
 
 import styles from "./../../styles/GlassBridge.module.css"
@@ -16,11 +17,9 @@ const buttonLine = ({ ...props }) => {
   }, [])
 
   return <div className={styles.buttonLine}>
-    <button >
-
-    </button>
-    <button></button>
-    <button></button>
+    <button id={props.Button}></button>
+    <button id={props.Button}></button>
+    <button id={props.Button}></button>
   </div>
 }
 
