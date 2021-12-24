@@ -5,6 +5,7 @@ import styles from "./../../styles/GlassBridge.module.css"
 
 const useCurrentBtn = () => {
   const [currrentLine, setCurrentLine] = useState(1)
+
   useEffect(() => {
 
   }, [])
@@ -15,7 +16,7 @@ const useCurrentBtn = () => {
 const Random = () => {
   return Math.floor(Math.random() * 3)
 }
-const buttonLine = ({ ...props }) => {
+const useRandom = () => {
   let a = [false, false, false]
   a[Random()] = true
 
@@ -24,6 +25,9 @@ const buttonLine = ({ ...props }) => {
   useEffect(() => {
 
   }, [])
+}
+const buttonLine = ({ ...props }) => {
+
 
   return <div className={styles.buttonLine}>
     <button id={props.Button}></button>
