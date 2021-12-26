@@ -28,13 +28,23 @@ const useRandom = () => {
   return { buttons, setButtons }
 
 }
+
+
+const checkGlass = (arr, num) => {
+  if (arr[num]) return true
+  return false
+}
 const buttonLine = ({ ...props }) => {
   const { buttons, setButtons } = useRandom()
   const btns = [buttons[0], buttons[1], buttons[2]]
 
   return (
     <div className={styles.buttonLine}>
-      <button id={props.Button + "a"}></button>
+      <button id={props.Button + "a"} onClick={() => {
+        if (checkGlass(btns, 0)) {
+
+        }
+      }}></button>
       <button id={props.Button + "b"}></button>
       <button id={props.Button + "c"}></button>
     </div>
