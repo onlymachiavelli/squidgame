@@ -37,7 +37,7 @@ const buttonLine = ({ ...props }) => {
 
   return (
     <div className={styles.buttonLine}>
-      <button className={props.Button + "a" + props.Selected ? "" : dis}></button>
+      <button className={props.Button + "a"} ></button>
       <button className={props.Button + "b"}></button>
       <button className={props.Button + "c"}></button>
     </div>

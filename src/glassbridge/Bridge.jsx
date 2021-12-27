@@ -3,8 +3,14 @@ import styles from "./../../styles/GlassBridge.module.css"
 import { Flag } from "./../svg"
 import myTimer from "./Timer"
 import Button from "./Button"
-import useTimer from "./Timer"
+import useTimer, { theTime } from "./Timer"
+
+export const timeOut = () => {
+  return 0
+}
 const Bridge = () => {
+
+
 
   return (
     <div className={styles.bridge}>
@@ -22,6 +28,7 @@ const Bridge = () => {
         <Button />
         <Button />
         <Button />
+
       </div>
     </div>
   )
