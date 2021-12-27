@@ -37,9 +37,9 @@ const buttonLine = ({ ...props }) => {
 
   return (
     <div className={styles.buttonLine}>
-      <button id={props.Button + "a"}></button>
-      <button id={props.Button + "b"}></button>
-      <button id={props.Button + "c"}></button>
+      <button className={props.Button + "a" + props.Selected ? "" : dis}></button>
+      <button className={props.Button + "b"}></button>
+      <button className={props.Button + "c"}></button>
     </div>
   )
 }
