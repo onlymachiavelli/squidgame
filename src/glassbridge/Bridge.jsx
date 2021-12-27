@@ -11,7 +11,8 @@ export const timeOut = () => {
 const Bridge = () => {
 
 
-
+  const { time, launch } = useTimer()
+  console.log(launch)
   return (
     <div className={styles.bridge}>
       <div className={styles.endLine}>
